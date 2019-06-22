@@ -1,0 +1,24 @@
+{
+  "name": "eslint-config-pdp-lint-rules",
+  "version": "1.0.0",
+  "description": "purple delightful pollock eslint rules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antempus/eslint-config-pdp-lint-rules.git"
+  },
+  "author": "Robert Steele <stryakr@gmail.com>",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/antempus/eslint-config-pdp-lint-rules/issues"
+  },
+  "homepage": "https://github.com/antempus/eslint-config-pdp-lint-rules#readme",
+  "peerDependencies": {
+    "eslint": ">= 3",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-plugin-jest": "22.7.0"
+  }
+}
