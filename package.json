@@ -20,5 +20,9 @@
     "eslint": ">= 3",
     "eslint-config-airbnb": "17.1.0",
     "eslint-plugin-jest": "22.7.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint-plugin-jsdoc": "^15.7.2"
   }
 }
