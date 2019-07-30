@@ -1,21 +1,21 @@
 {
-  "name": "eslint-config-pdp-lint-rules",
+  "name": "eslint-config-antempus",
   "version": "1.0.0",
-  "description": "purple delightful pollock eslint rules",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antempus/eslint-config-pdp-lint-rules.git"
+    "url": "git+https://github.com/antempus/eslint-config-antempus.git"
   },
   "author": "Robert Steele <stryakr@gmail.com>",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/antempus/eslint-config-pdp-lint-rules/issues"
+    "url": "https://github.com/antempus/eslint-config-antempus/issues"
   },
-  "homepage": "https://github.com/antempus/eslint-config-pdp-lint-rules#readme",
+  "homepage": "https://github.com/antempus/eslint-config-antempus#readme",
   "peerDependencies": {
     "eslint": ">= 3",
     "eslint-config-airbnb": "17.1.0",
