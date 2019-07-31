@@ -9,8 +9,7 @@ agent:
 blocks:
   - name: checkout, build, publish
     task:
-      env_vars:
-        secrets:
+      secrets:
         - name: npm-secrets
       prologue:
         commands:
