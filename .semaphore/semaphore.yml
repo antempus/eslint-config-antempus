@@ -9,13 +9,10 @@ agent:
 blocks:
   - name: NPM Package Publish
     task:
+      prologue:
+        commands:
+          - checkout
       jobs:
-        - name: pwd
-          commands:
-            - pwd
-        - name: cd
-          commands:
-            - ls
         - name: build
           commands:
             - npm build
