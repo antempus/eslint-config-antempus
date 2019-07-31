@@ -7,7 +7,7 @@ agent:
     type: e1-standard-2
     os_image: ubuntu1804
 blocks:
-  - name: checkout & build
+  - name: checkout, build, publish
     task:
       prologue:
         commands:
@@ -16,5 +16,7 @@ blocks:
         - name: publish
           commands:
             - npm config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}"
+            - npm config set always-auth=true
+            - npm config set email=${DEV_EMAILs}
             - npm build
             - npm publish
