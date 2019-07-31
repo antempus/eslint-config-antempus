@@ -18,5 +18,6 @@ blocks:
             - npm config set '//registry.npmjs.org/:_authToken' "${NPM_PUBLISH_TOKEN}"
             - npm config set always-auth=true
             - npm config set email=${DEV_EMAIL}
+            - npm whoami
             - npm build
             - npm publish
