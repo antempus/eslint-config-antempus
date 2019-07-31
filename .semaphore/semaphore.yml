@@ -19,10 +19,6 @@ blocks:
         - name: build
           commands:
             - npm build
-
-  - name: publish
-    task:
-      jobs:
         - name: publish
           commands:
             - npm publish
