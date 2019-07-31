@@ -7,7 +7,7 @@ agent:
     type: e1-standard-2
     os_image: ubuntu1804
 blocks:
-  - name: NPM Package Publish
+  - name: checkout & build
     task:
       prologue:
         commands:
@@ -19,7 +19,10 @@ blocks:
         - name: build
           commands:
             - npm build
+
+  - name: publish
+    task:
+      jobs:
         - name: publish
           commands:
-            - cd ../
             - npm publish
