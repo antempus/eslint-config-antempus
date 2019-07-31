@@ -13,12 +13,12 @@ blocks:
         - name: pwd
           commands:
             - pwd
+        - name: cd
+          commands:
+            - cd $SEMAPHORE_PROJECT_NAME
         - name: build
           commands:
             - npm build
-        - name: pwd2
-          commands:
-            - pwd
         - name: publish
           commands:
             - cd ../
