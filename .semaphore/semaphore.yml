@@ -13,12 +13,8 @@ blocks:
         commands:
           - checkout
       jobs:
-        - name: ls
-          commands:
-            - ls
-        - name: build
-          commands:
-            - npm build
         - name: publish
           commands:
+            - npm config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}"
+            - npm build
             - npm publish
