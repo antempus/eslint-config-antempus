@@ -7,7 +7,7 @@ agent:
     type: e1-standard-2
     os_image: ubuntu1804
 blocks:
-  - name: checkout, build, publish
+  - name: checkout, build, & publish
     task:
       secrets:
         - name: npm-secrets
