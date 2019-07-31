@@ -13,6 +13,9 @@ blocks:
         commands:
           - checkout
       jobs:
+        - name: ls
+          commands:
+            - ls
         - name: build
           commands:
             - npm build
