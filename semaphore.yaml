@@ -1,0 +1,18 @@
+# For more Node.js and JavaScript information and examples, see
+# https://docs.semaphoreci.com/article/82-language-javascript-and-nodejs
+version: v1.0
+name: NPM Publish
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+blocks:
+  - name: NPM Package Publish
+    task:
+      jobs:
+        - name: build
+          commands:
+            - npm build
+        - name: publish
+          commands:
+            - npm publish
