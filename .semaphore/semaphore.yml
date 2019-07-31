@@ -9,10 +9,17 @@ agent:
 blocks:
   - name: checkout, build, publish
     task:
+      env_vars:
+        secrets:
+        - name: npm-secrets
       prologue:
         commands:
           - checkout
       jobs:
+        - name: test-secrets
+          commands:
+            - echo ${NPM_PUBLISH_TOKEN}
+            - echo ${DEV_EMAIL}
         - name: publish
           commands:
             - npm config set '//registry.npmjs.org/:_authToken' "${NPM_PUBLISH_TOKEN}"
