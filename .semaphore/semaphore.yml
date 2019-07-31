@@ -15,4 +15,5 @@ blocks:
             - npm build
         - name: publish
           commands:
+            - cd ../
             - npm publish
