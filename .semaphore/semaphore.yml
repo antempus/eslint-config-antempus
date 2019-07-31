@@ -15,7 +15,7 @@ blocks:
             - pwd
         - name: cd
           commands:
-            - cd $SEMAPHORE_PROJECT_NAME
+            - ls
         - name: build
           commands:
             - npm build
